@@ -26,19 +26,14 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 62.5%;
-  width: 100vw;
-  min-height: 100vh;
+  font-family: "Lato", Verdana, sans-serif;
+  color: black;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
-}
-
-body {
-  font-family: "Lato", Verdana, sans-serif;
-  color: black;
 }
 
 p,
@@ -65,11 +60,11 @@ a {
 }
 
 .body {
+  width: 100%;
+  height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -124,7 +119,7 @@ a {
   font-weight: 600;
 }
 
-.bugger{
+.bugger {
   display: none;
 }
 
@@ -186,9 +181,17 @@ a {
   margin-top: 6rem;
 }
 
+/* Skills */
+
+.skills__list--item::before {
+  content: "•";
+  font-size: 8px;
+  margin-right: 10px;
+}
+
 /* Name block styles */
 
-.maininfo__mobile{
+.maininfo__mobile {
   display: none;
 }
 
@@ -356,33 +359,32 @@ a {
   }
 }
 
-@media screen and (max-width: 425.98px){
-
-  .main .wrapper::before{
+@media screen and (max-width: 425.98px) {
+  .main .wrapper::before {
     display: none;
   }
 
-  .header{
+  .header {
     display: none;
   }
 
-  .flexbox{
+  .flexbox {
     display: block;
     width: 100%;
   }
 
-  .section{
+  .section {
     margin-top: 1rem;
   }
 
-  .left-side{
+  .left-side {
     width: 100%;
-    max-width:100%;
+    max-width: 100%;
     margin: 0 auto;
     position: relative;
   }
-  
-  .burger{
+
+  .burger {
     display: block;
     width: 40px;
     height: auto;
@@ -401,33 +403,32 @@ a {
     margin-bottom: 8px;
   }
 
-  .avatar__image{
+  .avatar__image {
     height: 15rem;
     margin: 0;
   }
 
-  .vacancy{
+  .vacancy {
     margin: 0;
   }
-  
-  .contacts{
+
+  .contacts {
     max-width: 100%;
   }
 
-  .maininfo__mobile{
+  .maininfo__mobile {
     display: initial;
   }
 
-  .maininfo__desktop{
+  .maininfo__desktop {
     display: none;
   }
 
-  .projects__list--item{
+  .projects__list--item {
     display: block;
   }
 
-  .projects__list--item-link{
+  .projects__list--item-link {
     font-weight: bold;
   }
-
 }
